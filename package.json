@@ -1,11 +1,12 @@
 {
-  "name": "next-all-you-need-mono",
+  "name": "next-all-you-need",
   "private": true,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
@@ -19,5 +20,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@next-all-you-need/admin": "^0.1.0",
+    "@next-all-you-need/gateway": "^1.0.0"
+  }
 }

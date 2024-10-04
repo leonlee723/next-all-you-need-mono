@@ -1,0 +1,6 @@
+2024-09-02 16:04:04:44 [31merror[39m: [31mlisten EADDRINUSE: address already in use :::5000[39m
+2024-09-02 16:04:17:417 [31merror[39m: [31mlisten EADDRINUSE: address already in use :::5000[39m
+2024-09-02 16:06:01:61 [31merror[39m: [31mlisten EADDRINUSE: address already in use :::5000[39m
+2024-09-30 23:35:22:3522 [31merror[39m: [31mlisten EADDRINUSE: address already in use :::6000[39m
+2024-10-02 22:34:24:3424 [31merror[39m: [31mlisten EADDRINUSE: address already in use :::6000[39m
+2024-10-03 12:00:23:023 [31merror[39m: [31mlisten EADDRINUSE: address already in use :::6000[39m
