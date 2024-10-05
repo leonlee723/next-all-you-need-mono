@@ -43,3 +43,4 @@ yarn-error.log*
 # Package
 .node_modules
 
+*.psd

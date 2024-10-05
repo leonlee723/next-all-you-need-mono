@@ -1,8 +1,5 @@
 import { XMarkIcon } from '@heroicons/react/24/solid'
-// import { useDispatch, useSelector } from 'react-redux'
 import { RIGHT_DRAWER_TYPES } from '@/helper/app-constants'
-// import { useAppDispatch, useAppSelector } from '@/lib/hooks'
-// import { closeRightDrawer } from '@/features/common/rightDrawerSlice'
 import NotificationBodyRightDrawer from '@/features/common/notification-body-right-drawer'
 import { useRightDrawerStore } from '@/stores'
 

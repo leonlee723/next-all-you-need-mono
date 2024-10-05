@@ -1,81 +1,72 @@
-# Turborepo starter
+# Next all you need --- Full Stack TypeScript Boilerplate 
 
-This is an official starter Turborepo.
+<img src="./public/images/logo.png" alt="icon"/>
 
-## Using this example
+## Frontend - Next.js 14.x, TailwindCSS 3.4, Zustand 4.5
+## Backend - Express 4.x, Prisma 5.18
 
-Run the following command:
+🚀 This is a monoreop of full stack typeScript Boilerplate based on turborepo. It includes almost all you need of elements for making a web application. If you're looking for a full stack typeScript Boilerplate, then this repo is your needs. The repo includes frontend(admin) and backend(gateway). You can use them all together, or you can use only a part of them feel free.
 
-```sh
-npx create-turbo@latest
-```
 
-## What's inside?
+## Features & Roadmap
+Based on popular & excellent open source, for developers provided outstanding experience 
 
-This Turborepo includes the following packages/apps:
+### Repo
+- [x] A monorepo based on [Turborepo](https://turbo.build) 
+- [x] Type checking [TypeScript](https://www.typescriptlang.org)
+- [ ] CI/CD based on Github Actions
+- [ ] gRPC
+  
+### Frontend
+- [x] [Next.js](https://nextjs.org) with App Router support
+- [x] Integrate with [Tailwind CSS](https://tailwindcss.com)
+- [x] Use Daisyui [Daisyui](https://daisyui.com)
+- [x] State management with [Zustand](https://zustand-demo.pmnd.rs/) 
+- [x] Http Client with [Axios](https://axios-http.com/) 
+- [x] Unit test with [Jest](https://jestjs.io/) + [testing-library](https://testing-library.com/)
 
-### Apps and Packages
+### Backend
+- [x] Node.js web application framework with [Express.js](https://expressjs.com/) 
+- [x] ORM with [Prisma](https://www.prisma.io/)
+- [x] xss protection with  [xxs-filters](https://github.com/YahooArchive/xss-filters)
+- [x] data vulidator with [Joi](https://joi.dev/) 
+- [x] logger middleware with [morgan](github.com/expressjs/morgan) + [winston](github.com/winstonjs/winston) 
+- [x] Unit test with [Jest](https://jestjs.io/) + [supertest](github.com/ladjs/supertest)
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+### Project structure
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+```shell
+.
+├── README.md                    # README file
+├── .github                      # GitHub folder
+├── .vscode                      # VSCode configuration
+├── public                       # Public assets folder
+├── apps
+│   ├── admin                       # Frontend admin
+│   │   ├── __tests__                   # Unit tests
+│   │   ├── src                         # src folder
+│   │   │   ├── app                         # Next JS App (App Router)
+│   │   │   ├── components                  # React components
+│   │   │   ├── stores                      # Zustand stores
+│   └── gateway                     # Backend
+│   │   └──  __tests__                  # Unit tests
+│   │   └──  prisam                     # prisma folder, include schema and migrations 
+│   │   └──  src                        # src folder
 
 ```
-cd my-turborepo
-npx turbo login
-```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+### The repo refer to below repository, thanks to these excellent contributors
 
-```
-npx turbo link
-```
+- [prisma-express-typescript-boilerplate](https://github.com/antonio-lazaro/prisma-express-typescript-boilerplate)
+- [api-gateway](https://github.com/JanssenBrm/api-gateway)
+- [admin-dashboard-nextjs-typescript-daisyui-template](https://github.com/robbins23/admin-dashboard-nextjs-typescript-daisyui-template)
 
-## Useful Links
 
-Learn more about the power of Turborepo:
+### Contributions
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Everyone is welcome to contribute to this project. Feel free to open an issue if you have any questions or find a bug. Totally open to suggestions and improvements.
+
+### License
+
+Licensed under the MIT License, Copyright © 2024

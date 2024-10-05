@@ -290,3 +290,45 @@
 2024-10-03 16:58:25:5825 [32minfo[39m: [32mListening to port 6000[39m
 2024-10-03 16:58:30:5830 [32minfo[39m: [32mConnected to SQL Database[39m
 2024-10-03 16:58:30:5830 [32minfo[39m: [32mListening to port 6000[39m
+2024-10-04 17:01:11:111 [32minfo[39m: [32mConnected to SQL Database[39m
+2024-10-04 17:01:11:111 [32minfo[39m: [32mListening to port 6000[39m
+2024-10-04 17:01:34:134 [35mhttp[39m: [35mPOST /v1/auth/login 200 706 - 45.768 ms[39m
+[35m[39m
+2024-10-04 17:12:21:1221 [35mhttp[39m: [35mPOST /v1/auth/login 200 706 - 29.231 ms[39m
+[35m[39m
+2024-10-04 17:15:24:1524 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 3.495 ms[39m
+[35m[39m
+2024-10-04 17:15:53:1553 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 3.530 ms[39m
+[35m[39m
+2024-10-04 17:17:54:1754 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 5.642 ms[39m
+[35m[39m
+2024-10-04 17:20:37:2037 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 4.049 ms[39m
+[35m[39m
+2024-10-04 17:22:31:2231 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 10459.511 ms[39m
+[35m[39m
+2024-10-04 17:56:51:5651 [32minfo[39m: [32mConnected to SQL Database[39m
+2024-10-04 17:56:51:5651 [32minfo[39m: [32mListening to port 6000[39m
+2024-10-04 17:57:13:5713 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 13.655 ms[39m
+[35m[39m
+2024-10-04 17:59:08:598 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 47565.446 ms[39m
+[35m[39m
+2024-10-04 18:01:41:141 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 2674.632 ms[39m
+[35m[39m
+2024-10-04 18:04:19:419 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 6943.589 ms[39m
+[35m[39m
+2024-10-04 18:20:00:200 [32minfo[39m: [32mConnected to SQL Database[39m
+2024-10-04 18:20:00:200 [32minfo[39m: [32mListening to port 6000[39m
+2024-10-04 18:20:25:2025 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 13.668 ms[39m
+[35m[39m
+2024-10-04 18:21:14:2114 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 3.985 ms[39m
+[35m[39m
+2024-10-04 18:24:15:2415 [35mhttp[39m: [35mPOST /v1/auth/login 401 25 - 3.506 ms[39m
+[35m[39m
+2024-10-04 18:25:07:257 [35mhttp[39m: [35mPOST /v1/auth/login 401 31 - 9112.891 ms[39m
+[35m[39m
+2024-10-04 18:25:27:2527 [35mhttp[39m: [35mPOST /v1/auth/login 401 31 - 4940.320 ms[39m
+[35m[39m
+2024-10-04 18:26:10:2610 [35mhttp[39m: [35mPOST /v1/auth/login 200 706 - 5747.852 ms[39m
+[35m[39m
+2024-10-04 18:27:08:278 [35mhttp[39m: [35mPOST /v1/auth/login 200 706 - 5045.730 ms[39m
+[35m[39m

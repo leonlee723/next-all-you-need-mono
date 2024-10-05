@@ -6,13 +6,9 @@ import SidebarSubmenu from './sidebar-submenu';
 import routes from '@/helper/sidebar-routes';
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react';
-// import { useAppDispatch, useAppSelector } from '@/lib/hooks';
-import { setPageTitle } from '@/features/common/headerSlice';
-import { UserProfile } from '@/helper/types';
 import BookmarkSquareIcon from '@heroicons/react/24/outline/BookmarkSquareIcon'
 import ChevronUpIcon from '@heroicons/react/24/outline/ChevronUpIcon'
 import ArrowUpOnSquareIcon from '@heroicons/react/24/outline/ArrowUpOnSquareIcon'
-import { getUserInfo } from '@/features/common/userSlice';
 import auth from '@/lib/auth';
 import { useHeaderStore,useUserProfileStore } from '@/stores'
 

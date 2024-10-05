@@ -23,7 +23,7 @@ function Login(): JSX.Element {
   const [isOtpSent, setIsOtpSent] = useState(false)
   const { login } = useAuth()
 
-  const { loginService, userProfile } = useUserProfileStore()
+  const { loginService, userProfile, err } = useUserProfileStore()
 
   const [loginObj, setLoginObj] = useState<LoginObj>({
     password: '',
@@ -31,11 +31,16 @@ function Login(): JSX.Element {
   });
 
   useEffect(() => {
+    if(err.message!= ""){
+      setLoading(false);
+      setErrorMessage(err.message);
+    }
     if(userProfile.name!= ""){
       console.log(userProfile.name)
+      loginUser({token : "asdsadsddsad$$token"})
     }
   }
-  , [userProfile]);
+  , [userProfile,err]);
   
 
   const submitForm = (e: React.FormEvent<HTMLFormElement>): void => {
@@ -46,49 +51,9 @@ function Login(): JSX.Element {
     if(loginObj.password.trim() === "")return setErrorMessage("Password is required! (use any value)")
     else {  
       setLoading(true);
-      // Simulate API call
-      // setTimeout(() => {
-      //   setLoading(false);
-      //   loginUser({token : "asdsadsddsad$$token"})
-      // }, 2000);
-      loginService();
-  
-      loginUser({token : "asdsadsddsad$$token"})
+      loginService(loginObj.emailId.trim(), loginObj.password.trim());
     }
-    // if(isOtpSent){
-    //     submitVerificationCode()
-    // }else{
-    //     sendMailOtp()
-    // }
   };
-
-  // const sendMailOtp = () => {
-  //     if (loginObj.emailId.trim() === '') {
-  //       setErrorMessage('Email Id is required! (use any value)');
-  //       return;
-  //     }else{
-  //       setLoading(true);
-  //       // Simulate API call
-  //       setTimeout(() => {
-  //             setIsOtpSent(true)
-  //             setLoading(false);
-  //       }, 1000);
-  //     }
-  // }
-
-  // const submitVerificationCode = () => {
-  //     if (loginObj.otp.trim() === '') {
-  //       setErrorMessage('OTP is required! (use any value)');
-  //       return;
-  //     }else{
-  //       setLoading(true);
-  //       // Simulate API call
-  //       setTimeout(() => {
-  //         loginUser({token : "asdsadsddsad$$token"})
-  //       }, 2000);
-  //     }
-  // }
-
 
   const loginUser = async({ token }: { token: string;}) => {
     await login(token)
@@ -113,43 +78,6 @@ function Login(): JSX.Element {
               <InputText type="emailId" defaultValue={loginObj.emailId} updateType="emailId" containerStyle="mt-4" labelTitle="Email Id" updateFormValue={updateFormValue}/>
 
               <InputText defaultValue={loginObj.password} type="password" updateType="password" containerStyle="mt-4" labelTitle="Password" updateFormValue={updateFormValue}/>
-
-              {/* {
-                    !isOtpSent && 
-                    <>
-                        <p className='text-center text-lg   md:mt-0 mt-6 mb-12  font-semibold'>Enter Email ID to Continue</p>
-
-                        <InputText
-                          type="email"
-                          defaultValue={loginObj.emailId}
-                          updateType="emailId"
-                          containerStyle="mt-4"
-                          labelTitle="Enter your Email Id"
-                          placeholder="Ex - dashwind@gmail.com"
-                          updateFormValue={updateFormValue}
-                        />
-                    </>
-              }
-
-              {
-                                isOtpSent && <>
-                                
-                    <p className='text-center text-lg   md:mt-0 mt-6   font-semibold'>Enter verification code received on {loginObj.emailId}</p>
-                    <p className="text-center text-slate-500 mt-2 text-sm">Didn&apos;t receive mail? Check spam folder</p>
-                    
-                    <InputText
-                        type="number"
-                        defaultValue={loginObj.otp}
-                        updateType="otp"
-                        containerStyle="mt-4"
-                        labelTitle="Verification Code"
-                        placeholder="Ex- 1234"
-                        updateFormValue={updateFormValue}
-                      />
-                    </>
-                } */}
-
-                
                 
               </div>
               

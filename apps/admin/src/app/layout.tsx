@@ -15,11 +15,9 @@ console.log("root layout...")
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <StoreProvider> */}
           <AuthProvider>
             {children}
           </AuthProvider>
-        {/* </StoreProvider> */}
       </body>
     </html>
   );

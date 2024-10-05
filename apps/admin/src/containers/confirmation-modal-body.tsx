@@ -1,7 +1,4 @@
 import { CONFIRMATION_MODAL_CLOSE_TYPES } from '@/helper/app-constants';
-// import { useAppDispatch } from '@/lib/hooks';
-// import { deleteLead } from '@/features/leads/leadSlice';
-// import { showNotification } from '@/features/common/headerSlice';
 import { useHeaderStore, useLeadStore } from '@/stores';
 
 
