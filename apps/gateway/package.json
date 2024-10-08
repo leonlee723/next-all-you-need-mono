@@ -4,14 +4,14 @@
   "description": "",
   "scripts": {
     "start": "node dist/index.js",
-    "build": "tsc",
+    "build": "NODE_ENV=development tsc",
     "dev": "nodemon src/index.ts",
     "format": "prettier . --check",
     "format:write": "prettier . --write",
     "db:studio": "prisma studio",
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
-    "test": "jest",
+    "test": "NODE_ENV=development jest",
     "test:debug": "jest --runInBand"
   },
   "author": "",
