@@ -1,9 +1,9 @@
-import { closeModal } from '../features/common/modalSlice';
-// import { useAppDispatch, useAppSelector } from '@/lib/hooks';
+import React from 'react'
 import { MODAL_BODY_TYPES } from '@/helper/app-constants';
 import AddLeadModalBody from '@/features/leads/components/add-lead-modal-body';
 import ConfirmationModalBody from './confirmation-modal-body';
 import { useModelStore } from '@/stores';
+
 
 function ModalLayout() {
     // const { isOpen, bodyType, size, extraObject, title } = useAppSelector((state) => state.modal);

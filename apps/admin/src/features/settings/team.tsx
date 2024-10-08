@@ -1,13 +1,9 @@
 "use client"
 import TitleCard from "@/components/cards/title-card";
 import DummyData from "@/helper/dummy-data";
-import dummyData, { TeamMember } from "@/helper/dummy-data";
-// import { useAppDispatch } from "@/lib/hooks";
-import moment from "moment";
 import { useEffect, useState } from "react";
-// import { useDispatch } from "react-redux";
-// import { showNotification } from "../common/headerSlice";
 import { useHeaderStore } from "@/stores";
+import { TeamMember } from '@/helper/dummy-data';
 
 const TopSideButtons: React.FC = () => {
     // const dispatch = useAppDispatch();
@@ -79,7 +75,7 @@ const Team: React.FC = () => {
                 </table>
             </div>
             </TitleCard>
-            </>
+        </>
     )
 }
 

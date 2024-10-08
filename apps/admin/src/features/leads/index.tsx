@@ -1,13 +1,11 @@
 "use client"
+import React from 'react'
 import moment from "moment";
 import { useEffect } from "react";
 import TrashIcon from '@heroicons/react/24/outline/TrashIcon';
-// import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { CONFIRMATION_MODAL_CLOSE_TYPES, MODAL_BODY_TYPES } from "@/helper/app-constants";
 import TitleCard from "@/components/cards/title-card";
-// import { getLeadsContent } from "./leadSlice";
 import { Lead } from "@/helper/types";
-// import { openModal } from "../common/modalSlice";
 import { useModelStore, useLeadStore } from '@/stores';
 
 const TopSideButtons = () => {

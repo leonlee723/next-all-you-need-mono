@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-// import { useDispatch } from "react-redux";
-// import { showNotification } from "../../common/headerSlice";
-// import { addNewLead } from "../leadSlice";
 import InputText from "@/components/input/input-text";
 import TextArea from "@/components/input/text-area";
 import ErrorText from "@/components/typography/error-text";
